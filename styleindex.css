@@ -1,0 +1,154 @@
+:root{
+    --saphire:#0B55B9;
+    --white:#fff;
+    --black:#000;
+    --grey:#89888b;
+    --lightblue: #d8e8fd;
+    --lightgrey: #c7cdd3;
+    --darkgrey:#2f2f31;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    font-family: "Century Gothic",sans-serif;
+}
+header {
+    height: 60px;
+    display: flex;
+    justify-content: end;
+}
+.logoutBtn {
+    height: 100%;
+    width: 150px;
+    border: none;
+    background-color: var(--black);
+}
+.logoutBtn > a {
+    text-decoration: none;
+    color: var(--white);
+}
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+main {
+    width: 90vw;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newBtn {
+    height: 30px;
+    border: none;
+    background-color: var(--saphire);
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.viewBtn {
+    height: 30px;
+    border: none;
+    background-color: var(--lightgrey);
+    color: var(--white);
+    padding: 0 20px;
+}
+.createNote {
+    background-color: var(--lightgrey);
+    opacity: 0.4;
+    width: 600px;
+    height: 430px;
+    padding: 20px 40px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form [for="titleNote"] {
+    padding: 1rem;
+    font-weight: bold;
+}
+form [type="submit"] {
+    height: 60px;
+    padding: 0 35px;
+    background-color: var(--saphire);
+    border: none;
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+}
+input[type="text"] {
+    margin-bottom: 20px;
+}
+input#titleNote  {
+    height: 40px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid var(--saphire);
+    transition: all .3s ease-in-out;
+}
+textarea#contentNote{
+    padding: 13px 0 0 15px;
+    background-color: #fff;
+    border: 1px solid var(--saphire);
+    transition: all .3s ease-in-out;
+    resize: none;
+    margin-bottom: 20px;
+}
+#contentNote::placeholder, input::placeholder {
+    font-family: "Century Gothic",sans-serif;
+    font-size: 12px;
+}
+
+.container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+}
+.addedNote{
+    background-color: var(--lightgrey);
+    width: 260px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom:20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-left:10px;
+}
+.newNote{
+    background-color: var(--lightgrey);
+    opacity: 0.6;
+    width: 260px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom:20px;
+}
+
+.deleteBtn,.editBtn{
+    height: 30px;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0 20px;
+    margin-left:10px;
+    margin-bottom:20px;
+}
+
+.text {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleindex.css">
+    <title>Note taking app</title>
+</head>
+<body>
+<header>
+    <button class="logoutBtn"><a href="login.html">LOGOUT</a></button>
+</header>
+<section class="contentSection">
+    <main>
+        <nav>
+            <button class="viewBtn">view</button>
+            <button class="newBtn">new</button>
+        </nav>
+        <div class="wrapper">
+            <div class="createNote">
+                <form action="">
+                    <label for="titleNote">createNote</label>
+                    <input type="text" id="titleNote" placeholder="Introduce the title">
+                    <textarea name="contentNote" id="contentNote" cols="30" rows="10" placeholder="Introduce your notes"></textarea>
+                    <input type="submit" value="Add note">
+                </form></div>
+        </div>
+        <div class="container">
+            <div class="addedNote"><input type="text"  class="text" value="Note example" readonly><div class="modifyBtn"><button class="editBtn">edit</button>
+                <button class="deleteBtn">delete</button></div></div>
+            <div class="addedNote">note</div>
+            <div class="addedNote">note</div>
+            <div class="addedNote">note</div>
+            <div class="addedNote">note</div>
+            <div class="newNote">new</div>
+        </div> 
+    </main>
+</section>
+</body>
+</html>

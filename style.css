@@ -1,0 +1,85 @@
+:root{
+    --saphire:#0B55B9;
+    --white:#fff;
+    --black:#000;
+    --grey:#89888b;
+    --lightblue: #d8e8fd;
+    --lightgrey: #c7cdd3;
+    --darkgrey:#2f2f31;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    min-height: 100vh;
+    font-family: "Century Gothic",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    background-color: var(--lightblue);
+    height: 100%;
+    width: 30vw;
+    padding: 60px 40px;
+}
+a.newMemberLink {
+    margin-left: 5rem;
+    text-decoration: none;
+    color:var(--saphire);
+    font-weight: lighter;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h3.registerText {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+input[type="text"] {
+    margin-bottom: 20px;
+}
+input.inputForm {
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid var(--saphire);
+    transition: all .3s ease-in-out;
+}
+.termsprivacyForm {
+    font-size: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+p.termsText {
+    margin-left: .8rem;
+}
+
+a.linkTerm, .linkPassword {
+    color: #0B55B9;
+}
+button.newAccountBtn {
+    height: 60px;
+    padding: 0 35px;
+    background-color: var(--saphire);
+    border: none;
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.newAccountBtn > a {
+    color: white;
+    text-decoration: none;
+}
+
+.passwordForm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
